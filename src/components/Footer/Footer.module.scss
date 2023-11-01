@@ -46,9 +46,7 @@
 
 .Footer {
 	&Img {
-		width: calc(100vw - 12px);
-		margin-left: 6px;
-		margin-right: 6px;
+		width: 100vw;
 		position: absolute;
 		@media (min-width: 601px) {
 			& {
