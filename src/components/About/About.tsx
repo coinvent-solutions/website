@@ -6,7 +6,7 @@ import classNames from 'classnames'
 
 function About() {
     return (
-		<div className={styles.Content}>
+		<div id="Advantages" className={styles.Content}>
 			<div className={styles.Screen}>
 				<div className={styles.Block1}>
 					<div className={styles.Block1_Text}>	

@@ -6,7 +6,7 @@ import { fadeIn, textVariant, zoomIn } from "../../utils/motion";
 
 function People() {
     return (
-		<div className={styles.Content}>
+		<div id="People" className={styles.Content}>
 			<div className={styles.Screen}>
 				<div className={styles.Main}>
 					<motion.div variants={fadeIn("right", "spring", 0, 1)} className={styles.Daniil}>

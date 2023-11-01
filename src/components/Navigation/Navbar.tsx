@@ -54,15 +54,31 @@ const NavButtons: FC<INavBarButton> = ({ logo, title, bg, color, href }) => {
 };
 
 function Navbar() {
-	console.log()
+	
+	function ToTop() {
+		(document.querySelector('body') as HTMLBodyElement).scrollIntoView({ 
+			block: 'start',
+			behavior: 'smooth', 
+		});
+	}
+
+	function ScrollTo(id: string) {
+		(document.getElementById(id) as HTMLBodyElement).scrollIntoView({ 
+			block: 'center',
+			behavior: 'smooth', 
+		});
+	}
+
     return (
         <div className={styles.Navbar}>
 			<NavBarLogo {...LOGO}></NavBarLogo>
 			<div></div>
 			<div className={styles.NavbarPlaceLinks}>
-				{NavBar.map((i) => (
-					<NavBarBlock {...i}></NavBarBlock>
-				))}
+				<h1 onClick={ToTop} className={styles.NavBlock}>Main</h1>
+				<h1 onClick={() => ScrollTo("Advantages")} className={styles.NavBlock}>Our advantages</h1>
+				<h1 onClick={() => ScrollTo("People")} className={styles.NavBlock}>About Us</h1>
+				<h1 onClick={() => ScrollTo("Projects")} className={styles.NavBlock}>Recent projects</h1>
+				<h1 onClick={() => ScrollTo("Contact")} className={styles.NavBlock}>Contacts</h1>
 			</div>
 			<div className={styles.NavbarPlaceButtons}>
 				{NavBarButtons.map((i) => (

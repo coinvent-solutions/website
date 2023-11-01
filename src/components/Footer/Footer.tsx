@@ -25,8 +25,23 @@ const FooterBtn: FC<IFooterButton> = ({ logo, title, bg, color, href }) => {
 };
 
 function Footer() {
+
+	function ToTop() {
+		(document.querySelector('body') as HTMLBodyElement).scrollIntoView({ 
+			block: 'start',
+			behavior: 'smooth', 
+		});
+	}
+
+	function ScrollTo(id: string, where: ScrollLogicalPosition) {
+		(document.getElementById(id) as HTMLBodyElement).scrollIntoView({ 
+			block: where,
+			behavior: 'smooth', 
+		});
+	}
+
     return (
-		<div className={styles.Content}>
+		<div id="Contact" className={styles.Content}>
 			<div className={styles.Screen}>
 				<motion.h1 variants={textVariant()} className={styles.Text}>You should trust professionals<br/>to turn your <p className={styles.TextGradient}>ideas into reality</p></motion.h1>		
 			</div>
@@ -49,10 +64,10 @@ function Footer() {
 						<div className={classNames(styles.LogoBtn, styles.FooterNavBtn)}>
 							<img src={logo} alt="" />
 						</div>
-						<h1 className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Main</h1>
-						<h1 className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our advantages</h1>
-						<h1 className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our project</h1>
-						<h1 className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Direct contacting</h1>
+						<h1 onClick={ToTop} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Main</h1>
+						<h1 onClick={() => ScrollTo("Advantages", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our advantages</h1>
+						<h1 onClick={() => ScrollTo("People", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>About Us</h1>
+						<h1 onClick={() => ScrollTo("Contact", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Contacts</h1>
 					</div>
 					<h1 className={styles.FooterUnder}>We reply as fast as we can.</h1>
 				</div>
@@ -64,12 +79,12 @@ function Footer() {
 				<h1 className={styles.FooterUnder}>We reply as fast as we can.</h1>
 				<div className={styles.MobileNavBtns}>
 					<div className={styles.MobileNavBt}>
-						<h1 className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Main</h1>
-						<h1 className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our advantages</h1>
+						<h1 onClick={ToTop} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Main</h1>
+						<h1 onClick={() => ScrollTo("Advantages", 'start')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our advantages</h1>
 					</div>
 					<div className={styles.MobileNavBt}>
-						<h1 className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our project</h1>
-						<h1 className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Direct contacting</h1>
+						<h1 onClick={() => ScrollTo("People", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our project</h1>
+						<h1 onClick={() => ScrollTo("Contact", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Direct contacting</h1>
 					</div>
 				</div>
 			</div>

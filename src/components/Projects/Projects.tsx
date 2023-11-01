@@ -24,7 +24,7 @@ function Projects() {
 	}
 
     return (
-		<div className={styles.Content}>
+		<div id="Projects" className={styles.Content}>
 			<div className={styles.Screen}>
 				<div className={styles.Upper}>
 					<motion.div variants={fadeIn("right", "spring", 0, 1)} className={styles.LineProjects}>
