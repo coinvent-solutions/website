@@ -12,14 +12,15 @@ interface IFooterButton {
 	title: string,
 	bg: string,
 	color: string,
+	href: string,
 }
 
-const FooterBtn: FC<IFooterButton> = ({ logo, title, bg, color }) => {
+const FooterBtn: FC<IFooterButton> = ({ logo, title, bg, color, href }) => {
     return (
-		<div className={classNames(bg, color, styles.FooterButton, styles.cursor_pointer)}>
+		<a href={href} className={classNames(bg, color, styles.FooterButton, styles.cursor_pointer)}>
 			<img src={logo} alt="" className={styles.Logo} />
         	<h1 className={classNames(styles.BtnTitle, styles.cursor_pointer)}>{title}</h1>
-		</div>
+		</a>
     );
 };
 

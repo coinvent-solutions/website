@@ -9,6 +9,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -41,6 +45,10 @@ h6 {
 
 .ColorBlue {
   color: blue;
+}
+
+.ColorBlack {
+  color: black;
 }
 
 .hidden {

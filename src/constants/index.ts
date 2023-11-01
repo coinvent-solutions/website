@@ -13,12 +13,14 @@ const NavBarButtons = [
 		title: "Telegram",
 		bg: "bg-BLUE",
 		color: "ColorWhite",
+		href: "https://t.me/coinvent_dev",
 	}, 
 	{
 		logo: gmail,
 		title: "Gmail",
 		bg: "bg-WHITE",
-		color: "",
+		color: "ColorBlack",
+		href: "mailto:business@coinvent.dev"
 	},
 ]
 
@@ -28,12 +30,14 @@ const FooterButtons = [
 		title: "Telegram",
 		bg: "bg-WHITE",
 		color: "ColorBlue",
+		href: "https://t.me/coinvent_dev",
 	}, 
 	{
 		logo: gmail,
 		title: "Gmail",
 		bg: "bg-WHITE",
-		color: "",
+		color: "ColorBlack",
+		href: "mailto:business@coinvent.dev"
 	},
 ]
 

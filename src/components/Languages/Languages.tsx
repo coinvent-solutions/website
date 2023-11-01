@@ -22,4 +22,3 @@ function Languages() {
 }
 
 export default SectionWrapper(Languages, 'language')
-

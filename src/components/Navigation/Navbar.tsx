@@ -41,14 +41,15 @@ interface INavBarButton {
 	title: string,
 	bg: string,
 	color: string,
+	href: string,
 }
 
-const NavButtons: FC<INavBarButton> = ({ logo, title, bg, color }) => {
+const NavButtons: FC<INavBarButton> = ({ logo, title, bg, color, href }) => {
     return (
-		<div className={classNames(bg, color, styles.NavbarButton)}>
+		<a href={href} className={classNames(bg, color, styles.NavbarButton)}>
 			<img src={logo} alt="" className={styles.NavbarButton_Logo} />
         	<h1 className={styles.cursor_pointer}>{title}</h1>
-		</div>
+		</a>
     );
 };
 

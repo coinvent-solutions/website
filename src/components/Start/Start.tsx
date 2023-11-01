@@ -14,14 +14,14 @@ function Start() {
 					<h1 className={styles.Text_LOGO}>High competence in building <p className={styles.blue}>premium</p> quality web projects</h1>
 					<h1 className={styles.Text_Detail}>We are a developer team with a strong passion for open-source development and blockchain technology. Over the past several years, we have primarily been working on blockchain projects. </h1>
 					<div className={styles.Buttons}>
-						<div className={classNames(styles.cursor_pointer, styles.Button)}>
+						<a href="https://t.me/coinvent_dev" className={classNames(styles.cursor_pointer, styles.Button)}>
 							<img src={telegram} alt="" />
 							<h1>Contact us via: Telegram</h1>
-						</div>
-						<div className={classNames(styles.cursor_pointer, styles.Button, styles.EMAIL)}>
+						</a>
+						<a href="mailto:business@coinvent.dev" className={classNames(styles.cursor_pointer, styles.Button, styles.EMAIL)}>
 							<img src={email} alt=" " />
 							<h1>Send an E-mail</h1>
-						</div>
+						</a>
 					</div>
 				</div>
 				<motion.div variants={fadeIn("up", "spring", 0.25, 1)} className={styles.Comment}>
