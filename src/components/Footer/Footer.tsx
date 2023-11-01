@@ -83,8 +83,8 @@ function Footer() {
 						<h1 onClick={() => ScrollTo("Advantages", 'start')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our advantages</h1>
 					</div>
 					<div className={styles.MobileNavBt}>
-						<h1 onClick={() => ScrollTo("People", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our project</h1>
-						<h1 onClick={() => ScrollTo("Contact", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Direct contacting</h1>
+						<h1 onClick={() => ScrollTo("People", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>About Us</h1>
+						<h1 onClick={() => ScrollTo("Contact", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Contacts</h1>
 					</div>
 				</div>
 			</div>
