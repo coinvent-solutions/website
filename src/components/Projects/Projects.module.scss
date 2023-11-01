@@ -1,0 +1,400 @@
+@use "../../styles/global.module.scss" as global;
+
+.Content {
+	z-index: 0;
+	position: relative;
+}
+
+.Screen {
+	margin-top: 71px;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.Upper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Title {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 135.023%;
+	letter-spacing: -0.96px;
+	text-align: right;
+	max-width: 917px;
+	margin-right: 24px;
+	margin-left: 24px;
+	@media (min-width: 600px) {
+		& {
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 135.023%; /* 64.811px */
+			letter-spacing: -1.92px;
+		}
+	}
+}
+
+.Projects {
+	display: grid;
+	grid-template-areas:
+	'Block1 Block1'
+	'Block2 Block3'
+	'Block4 Block4';
+	margin-left: 24px;
+	margin-right: 24px;
+	gap: 7px;
+
+	@media (min-width: 600px) {
+		& {
+			display: grid;
+			grid-template-areas:
+			'Block1 Block1 Block2'
+			'Block3 Block4 Block5';
+		}
+	}
+
+	@media (min-width: 810px) {
+		& {
+			gap: 22px;
+		}
+	}
+
+	@media (min-width: 1270px) {
+		& {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+}
+
+.BlockTitle {
+	font-size: 17.291px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 23.055px; /* 133.333% */
+	letter-spacing: -0.173px;
+	@media (min-width: 600px) {
+		& {
+			font-size: 22.659px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 30.211px; /* 133.333% */
+			letter-spacing: -0.227px;
+		}
+	}
+}
+
+.BlockButton {
+	width: max-content;
+	height: max-content;
+	padding: 4.721px 18.042px 4.721px 18.231px;
+	border-radius: 48.15px;
+	border: 0.944px solid #000;
+	font-size: 16.05px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30.211px; /* 188.235% */
+	@media (min-width: 600px) {
+		& {
+			padding: 4.721px 24.042px 4.721px 24.231px;
+		}
+	}
+}
+
+.Block{
+	
+	display: flex;
+	height: 115px;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 15.106px;
+	border: 0.944px solid #212035;
+	padding: 10px;
+
+	@media (min-width: 600px) {
+		& {
+			height: 150px;
+			padding: 22px;
+		}
+	}
+}
+
+.Decoration {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 10%;
+	display: none;
+	@media (min-width: 600px) {
+		& {
+			display: block;
+		}
+	}
+}
+
+.Decoration2 {
+	z-index: 10;
+	position: absolute;
+	left: -200px;
+	top: -120px;
+	display: none;
+	@media (min-width: 600px) {
+		& {
+			display: block;
+		}
+	}
+}
+
+.Decoration3 {
+	z-index: -1;
+	position: absolute;
+	right: 0%;
+	bottom: -10%;
+	display: none;
+	@media (min-width: 600px) {
+		& {
+			display: block;
+		}
+	}
+}
+
+.LineProjects {
+	position: relative;
+	display: none;
+	@media (min-width: 1200px) {
+		& {
+			display: block;
+		}
+	}
+}
+
+.Block1 {
+	grid-area: Block1;
+	width: auto;
+	color: #FFF;
+	position: relative;
+	overflow: hidden;
+	@media (min-width: 1270px) {
+		& {
+			width: 755px;
+		}
+	}
+	
+	&Img {
+		z-index: -1;
+		filter: brightness(60%) blur(3px);
+		width: 100%;
+		height: auto;
+		-moz-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		-webkit-transition: all 1s ease-out;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		
+	}
+}
+.Block2 {
+	grid-area: Block2;
+	width: auto;
+	position: relative;
+	overflow: hidden;
+	color: white;
+	@media (min-width: 1270px) {
+		& {
+			width: 382px;
+		}
+	}
+
+	&Img {
+		z-index: -1;
+		filter: brightness(70%) blur(2px);
+		width: 100%;
+		height: 100%;
+		-moz-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		-webkit-transition: all 1s ease-out;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+
+		@media (min-width: 800px) {
+			& {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&:hover {
+		&Img {
+			filter: brightness(100%) blur(1px);
+		}
+	}
+}
+.Block3 {
+	grid-area: Block3;
+	width: auto;
+	position: relative;
+	color: white;
+	overflow: hidden;
+	@media (min-width: 1270px) {
+		& {
+			width: 319px;
+		}
+	}
+
+	&Img {
+		z-index: -1;
+		filter: brightness(50%) blur(2px);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		-moz-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		-webkit-transition: all 1s ease-out;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+
+		@media (min-width: 1050px) {
+			& {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+.Block4 {
+	grid-area: Block4;
+	color: white;
+	width: auto;
+	position: relative;
+	overflow: hidden;
+	@media (min-width: 1270px) {
+		& {
+			width: 369px;
+		}
+	}
+
+	&Img {
+		filter: brightness(50%) blur(2px);
+		z-index: -1;
+		width: 120%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		-moz-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		-webkit-transition: all 1s ease-out;
+
+		@media (min-width: 350px) {
+			& {
+				width: 100%;
+				height: 150%;
+			}
+		}
+
+		@media (min-width: 600px) {
+			& {
+				width: 130%;
+				height: 100%;
+			}
+		}
+
+		@media (min-width: 1270px) {
+			& {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+}
+.Block5 {
+	grid-area: Block5;
+	width: auto;
+	display: none;
+	@media (min-width: 1270px) {
+		& {
+			width: 382px;
+		}
+	}
+	@media (min-width: 600px) {
+		& {
+			display: flex;
+		}
+	}
+}
+
+.blue {
+	display: inline;
+	color: #0047FF;
+}
+
+.purple {
+	display: inline;
+	color: #794AFF;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.Rotate {
+		animation: LoadIcon-spin infinite 7s linear;
+	}
+}
+
+@keyframes LoadIcon-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.ArrowAbout {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.cursor_pointer {
+	cursor: pointer;
+}
+
+.WhiteButton {
+	color: white;
+	border: 0.944px solid #FFF;
+}
+
+.Clear {
+	filter: brightness(100%) blur(0px)
+}
+
+.hidden {
+	opacity: 0;
+	transition: 0.6s;
+}
+
+.Scale {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+}

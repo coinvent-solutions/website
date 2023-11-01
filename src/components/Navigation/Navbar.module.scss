@@ -1,0 +1,109 @@
+@use "../../styles/global.module.scss" as global;
+
+.Navbar {
+	left: 0px;
+	right: 0px;
+	position: absolute;
+	display: flex;
+	z-index: 0;
+	justify-content: space-between;	
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	@media (min-width: 768px) {
+		& {
+			padding-left: 6rem;
+			padding-right: 6rem;
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute; /* Абсолютное позиционирование */
+		left: 0; right: 0; top: 0; bottom: 0;
+		z-index: -1;
+		// background-color: rgba(255,255,255,0.9);
+		backdrop-filter: blur(10px);
+		// filter: blur(0px);
+	}
+
+	&Logo {
+		display: flex;
+		gap: 6px;
+	}
+
+	&PlaceButtons {
+		display: flex;
+		gap: 10px;
+	}
+
+	&PlaceLinks {
+		display: none;
+		gap: 49.5px;
+
+		@media (min-width: 1250px) {
+			& {
+				display: flex;
+			}
+		}
+	}
+
+	&Button {
+		display: flex;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 8.5px;
+		padding-bottom: 8.5px;
+		gap: 5px;
+		border-radius: 0.5rem;
+		font-size: 10.3px;
+		@media (min-width: 768px) {
+			& {
+				padding-left: 14px;
+				padding-right: 14px;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				font-size: 16px;
+				gap: 8px;
+			}
+		}
+
+		&_Logo {
+			width: 10px;
+			height: 14px;
+			@media (min-width: 768px) {
+				& {
+					width: auto;
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+.NavBlock {
+	cursor: pointer;
+	font-weight: 500;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.cursor_pointer {
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.LogoTitle {
+	cursor: pointer;
+	white-space: nowrap;
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 28px;
+	margin-top: auto;
+	margin-bottom: auto;
+}

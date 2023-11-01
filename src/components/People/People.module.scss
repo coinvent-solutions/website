@@ -1,0 +1,343 @@
+@use "../../styles/global.module.scss" as global;
+
+.Content {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.Screen {
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Main {
+	margin-top: 50px;
+	display:flex;
+	gap: 30px;
+	width: 100%;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	@media (min-width: 1250px) {
+		& {
+			width: max-content;
+			flex-direction: row;
+		}
+	}
+}
+
+.Daniil {
+	width: 317px;
+	height: 109px;
+	margin-left: auto;
+	margin-right: auto;
+	flex-shrink: 0;
+	flex-basis: auto;
+	flex-grow: 3;
+	position: relative;
+
+	@media (min-width: 380px) {
+		& {
+			width: 370px;
+			height: 128px;
+		}
+	}
+
+	@media (min-width: 450px) {
+		& {
+			width: 440px;
+			height: 152px;
+		}
+	}
+
+
+	@media (min-width: 640px) {
+		& {
+			width: 610px;
+			height: 211px;
+		}
+	}
+
+	@media (min-width: 1250px) {
+		& {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+
+	&_Img {
+		
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+	}
+
+	&_Content {
+		padding: 15px;
+	}
+}
+
+.Slava {
+	width: 317px;
+	height: 109px;
+	flex-shrink: 0;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (min-width: 380px) {
+		& {
+			width: 370px;
+		}
+	}
+
+	@media (min-width: 450px) {
+		& {
+			width: 440px;
+		}
+	}
+
+	@media (min-width: 640px) {
+		& {
+			width: 610px;
+			height: 211px;
+		}
+	}
+	
+	@media (min-width: 1250px) {
+		& {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+
+	&_Img {
+		
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+	}
+
+	&_Content {
+		padding: 15px;
+	}
+}
+
+.Info {
+	font-size: 9.354px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 14.031px */
+
+	@media (min-width: 450px) {
+		& {
+			font-size: 13px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%; /* 27px */
+		}
+	}
+
+	@media (min-width: 640px) {
+		& {
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%; /* 27px */
+		}
+	}
+}
+
+.Title {
+	font-size: 15.555px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 19.358px; /* 124.444% */
+	letter-spacing: -0.484px;
+
+	@media (min-width: 450px) {
+		& {
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: -0.484px
+		}
+	}
+
+
+	@media (min-width: 640px) {
+		& {
+			font-size: 29.933px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 37.25px; /* 124.444% */
+			letter-spacing: -0.931px;
+		}
+	}
+
+}
+
+.Detail	{
+	font-size: 8.834px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+
+	@media (min-width: 450px) {
+		& {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%;
+		}
+	}
+
+
+	@media (min-width: 640px) {
+		& {
+			font-size: 17px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%;
+		}
+	}
+}
+
+.MoreDetail {
+	color: rgba(0, 0, 0, 0.50);
+	display: inline;
+}
+
+.Learn {
+	max-width: 267px;
+	font-size: 24px;
+	font-style: normal;
+	margin-right: 73px;
+	margin-left: 25px;
+	font-weight: 500;
+	line-height: 135.023%; /* 32.405px */
+	letter-spacing: -0.96px;
+
+	@media (min-width: 600px) {
+		& {
+			max-width: 500px;
+		}
+	}
+
+	@media (min-width: 1250px) {
+		& {
+			max-width: 795px;
+			margin-right: 0px;
+			margin-left: 0px;
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 135.023%; /* 64.811px */
+			letter-spacing: -1.92px;
+		}
+	}
+}
+
+.Decoration {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	right: -200px;
+	bottom: -130px;
+
+	@media (min-width: 600px) {
+		& {
+			
+			display: flex;
+		}
+	}
+}
+
+.blue {
+	display: inline;
+	color: #0047FF;
+}
+
+.purple {
+	display: inline;
+	color: #794AFF;
+}
+
+.LastText {
+	margin-top: 78px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.NameAndPhoto {
+	display: flex;
+	gap: 5px;
+}
+
+.SmallPhoto {
+	width: 20px;
+	height: 20px;
+	@media (min-width: 640px) {
+		& {
+			width: 38px;
+			height: 38px;
+		}
+	}
+	
+	border-radius: 999rem;
+}
+
+.LineAbout {
+	display: none;
+	position: relative;
+	margin-right: 100px;
+
+	@media (min-width: 1300px) {
+		& {
+			margin-right: 0px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		& {
+			display: block;
+		}
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.Rotate {
+		animation: LoadIcon-spin infinite 7s linear;
+	}
+}
+
+@keyframes LoadIcon-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.ArrowAbout {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.ExtraText {
+	display: none;
+	@media (min-width: 840px) {
+		& {
+			display: block;
+		}
+	}
+	@media (min-width: 1250px) {
+		& {
+			display: none;
+		}
+	}
+}
