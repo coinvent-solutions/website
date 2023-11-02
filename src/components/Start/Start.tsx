@@ -50,7 +50,7 @@ function Start() {
                     className={styles.Comment}
                 >
                     <h1 className={styles.Comment_Text}>
-                        Tons of experience with TWA, DEX, DeFi, NFTs,
+                        Lots of experience with TWA, DEX, DeFi, NFTs,
                         Smart-contracts & much more on the list
                     </h1>
                 </motion.div>
