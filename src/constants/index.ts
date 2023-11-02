@@ -2,7 +2,7 @@ import { logo, telegram, gmail, html, css, ton, python, ts, telegramBlue } from 
 
 const LOGO = {
 	img: logo,
-	title: "SEYKO Development",
+	title: "",
 	href: "",
 	id: "Logo"
 }
@@ -41,34 +41,6 @@ const FooterButtons = [
 	},
 ]
 
-const NavBar = [
-    {
-        title: "Main",
-        href: "",
-        id: "Main"
-    },
-    {
-        title: "Our advantages",
-        href: "",
-        id: "OurAdvantages"
-    },
-	{
-        title: "Rodmap way",
-        href: "",
-        id: "RodmapWay"
-    },
-	{
-        title: "Our project",
-        href: "",
-        id: "OurProject"
-    },
-	{
-        title: "Direct contacting",
-        href: "",
-        id: "DirectContacting"
-    },
-]
-
 const langs = [
     html,
     css,
@@ -77,5 +49,5 @@ const langs = [
     ts,    
 ]
 
-export { LOGO, NavBarButtons, FooterButtons, NavBar, langs, };
+export { LOGO, NavBarButtons, FooterButtons, langs, };
   

@@ -67,8 +67,8 @@ function Footer() {
 						<h1 onClick={ToTop} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Main</h1>
 						<h1 onClick={() => ScrollTo("Advantages", 'start')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Our advantages</h1>
 						<h1 onClick={() => ScrollTo("People", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>About Us</h1>
-						<h1 onClick={() => ScrollTo("Contact", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Contacts</h1>
 						<h1 onClick={() => ScrollTo("Projects", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Recent projects</h1>
+						<h1 onClick={() => ScrollTo("Contact", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Contacts</h1>
 					</div>
 					<h1 className={styles.FooterUnder}>We reply as fast as we can.</h1>
 				</div>
@@ -85,10 +85,10 @@ function Footer() {
 					</div>
 					<div className={styles.MobileNavBt}>
 						<h1 onClick={() => ScrollTo("People", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>About Us</h1>
-						<h1 onClick={() => ScrollTo("Contact", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Contacts</h1>
+						<h1 onClick={() => ScrollTo("Projects", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Recent projects</h1>
 					</div>
 					<div className={styles.MobileNavBt}>
-						<h1 onClick={() => ScrollTo("Projects", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Recent projects</h1>
+						<h1 onClick={() => ScrollTo("Contact", 'center')} className={classNames(styles.FooterNavBtn, styles.cursor_pointer)}>Contacts</h1>
 					</div>
 				</div>
 			</div>

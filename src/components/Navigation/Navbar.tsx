@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { logo } from '../../assets'
-import { LOGO, NavBar, NavBarButtons } from '../../constants'
+import { LOGO, NavBarButtons } from '../../constants'
 import styles from './Navbar.module.scss'
 import classNames from 'classnames'
 
@@ -19,6 +19,7 @@ const NavBarLogo: FC<INavBarLogo> = ({ img, title, href, id }) => {
     return (
 		<div className={styles.NavbarLogo}>
 			<img src={img} alt="" />
+
 		</div>
     );
 };
