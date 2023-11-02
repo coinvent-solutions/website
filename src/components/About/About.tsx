@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import {
+    ArrowPeople,
+    CirclePeople,
     HelpingConstruct,
-    logo,
     Block5,
     Block2,
     Block4,
@@ -17,6 +18,10 @@ import {
 import { langs } from '../../constants';
 import styles from './About.module.scss';
 import classNames from 'classnames';
+import { SectionWrapper } from '../../hoc';
+import { motion } from 'framer-motion';
+import { fadeIn, textVariant, zoomIn } from '../../utils/motion';
+
 
 function About() {
     function ScrollTo(id: string) {
@@ -28,6 +33,30 @@ function About() {
 
     return (
         <div id="Advantages" className={styles.Content}>
+            <div className={styles.LastText}>
+                <div className={styles.ExtraText}></div>
+                <motion.h1
+                    variants={textVariant(0.2)}
+                    className={styles.Learn}
+                >
+                    Learn more about our{' '}
+                    <p className={styles.blue}>stack</p>,{' '}
+                    <p className={styles.purple}>faces</p>,{' '}
+                    <p className={styles.blue}>advantages</p> & much more
+                </motion.h1>
+                <div className={styles.LineAbout}>
+                    <img
+                        src={CirclePeople}
+                        alt=""
+                        className={styles.Rotate}
+                    />
+                    <img
+                        src={ArrowPeople}
+                        alt=""
+                        className={styles.ArrowAbout}
+                    />
+                </div>
+            </div>
             <div className={styles.Screen}>
                 <div className={styles.Block1}>
                     <div className={styles.Block1_Text}>

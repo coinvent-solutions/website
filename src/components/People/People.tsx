@@ -1,6 +1,4 @@
 import {
-    ArrowPeople,
-    CirclePeople,
     DaniilBg,
     DecorateScroll,
     SlavaBg,
@@ -86,30 +84,7 @@ function People() {
                         </div>
                     </motion.div>
                 </div>
-                <div className={styles.LastText}>
-                    <div className={styles.ExtraText}></div>
-                    <motion.h1
-                        variants={textVariant(0.2)}
-                        className={styles.Learn}
-                    >
-                        Learn more about our{' '}
-                        <p className={styles.blue}>stack</p>,{' '}
-                        <p className={styles.purple}>faces</p>,{' '}
-                        <p className={styles.blue}>advantages</p> & much more
-                    </motion.h1>
-                    <div className={styles.LineAbout}>
-                        <img
-                            src={CirclePeople}
-                            alt=""
-                            className={styles.Rotate}
-                        />
-                        <img
-                            src={ArrowPeople}
-                            alt=""
-                            className={styles.ArrowAbout}
-                        />
-                    </div>
-                </div>
+                
             </div>
             <img
                 src={DecorateScroll}
