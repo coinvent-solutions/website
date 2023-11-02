@@ -22,7 +22,7 @@ function People() {
                             <h1 className={styles.Detail}>
                                 Founder,{' '}
                                 <p className={styles.MoreDetail}>
-                                    Technical leader
+                                    Technical Leader
                                 </p>
                             </h1>
                             <div className={styles.NameAndPhoto}>
