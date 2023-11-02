@@ -11,6 +11,7 @@ function People() {
                 <div className={styles.Main}>
                     <motion.a 
                         href='https://gusarich.com/'
+                        target="_blank"
                         variants={fadeIn('right', 'spring', 0, 1)}
                         className={styles.Daniil}
                     >
@@ -48,6 +49,7 @@ function People() {
 
                     <motion.a
                         href='https://slava.bio'
+                        target="_blank"
                         variants={fadeIn('right', 'spring', 0.5, 0.75)}
                         className={styles.Slava}
                     >
