@@ -33,7 +33,7 @@ function Start() {
                             <h1>Contact us in Telegram</h1>
                         </a>
                         <a
-                            href="mailto:business@coinvent.dev"
+                            href="mailto:contact@coinvent.dev"
                             className={classNames(
                                 styles.cursor_pointer,
                                 styles.Button,
