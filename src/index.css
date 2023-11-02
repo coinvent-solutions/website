@@ -1,5 +1,6 @@
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -62,5 +63,3 @@ h6 {
 .show {
   display: block;
 }
-
-html { overflow-x: hidden; }
