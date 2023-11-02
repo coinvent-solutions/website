@@ -9,7 +9,8 @@ function People() {
         <div id="People" className={styles.Content}>
             <div className={styles.Screen}>
                 <div className={styles.Main}>
-                    <motion.div
+                    <motion.a 
+                        href='https://gusarich.com/'
                         variants={fadeIn('right', 'spring', 0, 1)}
                         className={styles.Daniil}
                     >
@@ -43,9 +44,10 @@ function People() {
                                 in the blockchain industry, particularly in TON.
                             </motion.h1>
                         </div>
-                    </motion.div>
+                    </motion.a>
 
-                    <motion.div
+                    <motion.a
+                        href='https://slava.bio'
                         variants={fadeIn('right', 'spring', 0.5, 0.75)}
                         className={styles.Slava}
                     >
@@ -78,7 +80,7 @@ function People() {
                                 passion for building successful projects.
                             </motion.h1>
                         </div>
-                    </motion.div>
+                    </motion.a>
                 </div>
             </div>
             <img

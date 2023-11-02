@@ -1,4 +1,4 @@
-import { logo, telegram, gmail, html, css, ton, python, ts, telegramBlue } from "../assets"
+import { logo, telegram, email, html, css, ton, python, ts, telegramBlue } from "../assets"
 
 const LOGO = {
 	img: logo,
@@ -16,10 +16,10 @@ const NavBarButtons = [
 		href: "https://t.me/coinvent_dev",
 	}, 
 	{
-		logo: gmail,
-		title: "Gmail",
+		logo: email,
+		title: "Email",
 		bg: "bg-WHITE",
-		color: "ColorBlack",
+		color: "ColorBlue",
 		href: "mailto:business@coinvent.dev"
 	},
 ]
@@ -33,10 +33,10 @@ const FooterButtons = [
 		href: "https://t.me/coinvent_dev",
 	}, 
 	{
-		logo: gmail,
-		title: "Gmail",
+		logo: email,
+		title: "Email",
 		bg: "bg-WHITE",
-		color: "ColorBlack",
+		color: "ColorBlue",
 		href: "mailto:business@coinvent.dev"
 	},
 ]
