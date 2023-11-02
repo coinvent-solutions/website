@@ -1,8 +1,4 @@
-import {
-    DaniilBg,
-    DecorateScroll,
-    SlavaBg,
-} from '../../assets';
+import { DaniilBg, DecorateScroll, SlavaBg } from '../../assets';
 import styles from './People.module.scss';
 import { SectionWrapper } from '../../hoc';
 import { motion } from 'framer-motion';
@@ -26,7 +22,7 @@ function People() {
                             <h1 className={styles.Detail}>
                                 Founder,{' '}
                                 <p className={styles.MoreDetail}>
-                                    Technical leader
+                                    Technical Leader
                                 </p>
                             </h1>
                             <div className={styles.NameAndPhoto}>
@@ -78,13 +74,12 @@ function People() {
                                 className={styles.Info}
                             >
                                 A skilled manager with work experience <br />
-                                at the TON Foundation and a strong <br />
+                                at TON Foundation and a strong <br />
                                 passion for building successful projects.
                             </motion.h1>
                         </div>
                     </motion.div>
                 </div>
-                
             </div>
             <img
                 src={DecorateScroll}

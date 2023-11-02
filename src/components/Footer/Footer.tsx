@@ -52,7 +52,7 @@ function Footer() {
 					<img src={footerBg} className={styles.FooterImg} />
 				</picture>
 				<div className={styles.FooterContent}>
-					<motion.h1 variants={zoomIn(0.5, 0.5)} className={styles.FooterText}>Contact us via Telegram or<br/>leave us an e-mail, so we’ll<br/>respond!</motion.h1>
+					<motion.h1 variants={zoomIn(0.5, 0.5)} className={styles.FooterText}>Contact us via Telegram or<br/>leave us an email, so we’ll<br/>respond!</motion.h1>
 					<motion.div variants={zoomIn(0.5, 0.5)} className={styles.FooterPlaceButtons}>
 						{FooterButtons.map((i) => (
 							<FooterBtn {...i}></FooterBtn>
