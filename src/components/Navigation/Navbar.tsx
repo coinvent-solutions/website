@@ -19,7 +19,6 @@ const NavBarLogo: FC<INavBarLogo> = ({ img, title, href, id }) => {
     return (
 		<div className={styles.NavbarLogo}>
 			<img src={img} alt="" />
-
 		</div>
     );
 };
