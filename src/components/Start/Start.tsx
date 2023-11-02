@@ -41,7 +41,7 @@ function Start() {
                             )}
                         >
                             <img src={email} alt=" " />
-                            <h1>Send an E-mail</h1>
+                            <h1>Send an email</h1>
                         </a>
                     </div>
                 </div>
