@@ -5,6 +5,14 @@ import styles from './About.module.scss'
 import classNames from 'classnames'
 
 function About() {
+
+	function ScrollTo(id: string) {
+		(document.getElementById(id) as HTMLBodyElement).scrollIntoView({ 
+			block: 'center',
+			behavior: 'smooth', 
+		});
+	}
+
     return (
 		<div id="Advantages" className={styles.Content}>
 			<div className={styles.Screen}>
@@ -31,7 +39,7 @@ function About() {
 						<h1 className={styles.Block3_Title}>Our clients contact<br/>us more than 2 times</h1>
 						<img src={line} alt="" className={styles.Block3_Underline} />
 						<p className={styles.Block3_Info}>We take our clients' tasks<br/>responsibly. We bring projects to<br/>the end, offer our ideas and<br/>strictly meet any deadlines</p>
-						<div className={classNames(styles.Button, styles.cursor_pointer)}>Look through our reviews &rarr;</div>
+						<div onClick={() => ScrollTo("Projects")} className={classNames(styles.Button, styles.cursor_pointer)}>Look through our projects</div>
 					</div>
 					<picture>
 						<source media="(min-width: 768px)" srcSet={`${Block3} 768w`} sizes="768px" />

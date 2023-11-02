@@ -456,6 +456,7 @@
 }
 
 .BlackBlock {
+	z-index: 1;
 	position: absolute;
 	left: 20%;
 	top: 1650px;
@@ -484,6 +485,8 @@
 }
 
 .Button {
+	position: relative;
+	z-index: 10;
 	background-color: #FFF;
 	margin-top: 12px;
 	width: max-content;
