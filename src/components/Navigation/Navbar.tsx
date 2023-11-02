@@ -62,9 +62,9 @@ function Navbar() {
 		});
 	}
 
-	function ScrollTo(id: string) {
+	function ScrollTo(id: string, where: ScrollLogicalPosition) {
 		(document.getElementById(id) as HTMLBodyElement).scrollIntoView({ 
-			block: 'center',
+			block: where,
 			behavior: 'smooth', 
 		});
 	}
@@ -75,10 +75,10 @@ function Navbar() {
 			<div></div>
 			<div className={styles.NavbarPlaceLinks}>
 				<h1 onClick={ToTop} className={styles.NavBlock}>Main</h1>
-				<h1 onClick={() => ScrollTo("Advantages")} className={styles.NavBlock}>Our advantages</h1>
-				<h1 onClick={() => ScrollTo("People")} className={styles.NavBlock}>About Us</h1>
-				<h1 onClick={() => ScrollTo("Projects")} className={styles.NavBlock}>Recent projects</h1>
-				<h1 onClick={() => ScrollTo("Contact")} className={styles.NavBlock}>Contacts</h1>
+				<h1 onClick={() => ScrollTo("Advantages", 'start')} className={styles.NavBlock}>Our advantages</h1>
+				<h1 onClick={() => ScrollTo("People", 'center')} className={styles.NavBlock}>About Us</h1>
+				<h1 onClick={() => ScrollTo("Projects", 'center')} className={styles.NavBlock}>Recent projects</h1>
+				<h1 onClick={() => ScrollTo("Contact", 'center')} className={styles.NavBlock}>Contacts</h1>
 			</div>
 			<div className={styles.NavbarPlaceButtons}>
 				{NavBarButtons.map((i) => (
