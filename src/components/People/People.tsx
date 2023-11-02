@@ -43,9 +43,10 @@ function People() {
                                 variants={textVariant()}
                                 className={styles.Info}
                             >
-                                Well-known developer and auditor with <br />
-                                lots of knowledge and experience <br />
-                                in the blockchain industry, especially TON.
+                                A well-known developer and auditor
+                                <br />
+                                with extensive knowledge and experience <br />
+                                in the blockchain industry, particularly in TON.
                             </motion.h1>
                         </div>
                     </motion.div>
@@ -78,9 +79,9 @@ function People() {
                                 variants={textVariant(0.5)}
                                 className={styles.Info}
                             >
-                                Skilled manager with work experience <br />
-                                in TON Foundation and a strong passion <br />
-                                towards building successful projects.
+                                A skilled manager with work experience <br />
+                                at the TON Foundation and a strong <br />
+                                passion for building successful projects.
                             </motion.h1>
                         </div>
                     </motion.div>
