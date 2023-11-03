@@ -508,6 +508,11 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.4.tgz#0a41252ad431c473158b22f9bfb9a63df7541cff"
   integrity sha512-MMzuxN3GdFwskAnb6fz0orFvhfqi752yjaXylr0Rp4oDg5H0Zn1IuyRhDVvYOwAXoJirx2xuS16I3WjxnAIHiQ==
 
+"@types/smoothscroll-polyfill@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@types/smoothscroll-polyfill/-/smoothscroll-polyfill-0.3.2.tgz#fd7045b7a7d97b3b54fe8d101b62e73651c8bf5e"
+  integrity sha512-NqOjJ9jXwRUzw2+Kx/JcguVjAf9DQRxdXW5c2T+WXvD1gG265ePEHh7hDJHk6DpQa6U+HhLR6MVpfACAl7zl9g==
+
 "@typescript-eslint/eslint-plugin@^6.0.0":
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.8.0.tgz#06abe4265e7c82f20ade2dcc0e3403c32d4f148b"
