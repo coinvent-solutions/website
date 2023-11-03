@@ -41,7 +41,7 @@ function About() {
                 >
                     Learn more about our{' '}
                     <p className={styles.blue}>stack</p>,{' '}
-                    <p className={styles.purple}>faces</p>,{' '}
+                    <p className={styles.blue}>faces</p>,{' '}
                     <p className={styles.blue}>advantages</p> & much more
                 </motion.h1>
                 <div className={styles.LineAbout}>
