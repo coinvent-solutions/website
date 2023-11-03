@@ -8,6 +8,7 @@
 .Screen {
 	margin-top: 50px;
 	max-width: 1250px;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -189,7 +190,7 @@
 	overflow: hidden;
 	@media (min-width: 1270px) {
 		& {
-			width: 755px;
+			width: 750px;
 		}
 	}
 	
@@ -217,7 +218,7 @@
 	color: white;
 	@media (min-width: 1270px) {
 		& {
-			width: 382px;
+			width: 375px;
 		}
 	}
 
@@ -291,7 +292,7 @@
 	overflow: hidden;
 	@media (min-width: 1270px) {
 		& {
-			width: 369px;
+			width: 364px;
 		}
 	}
 
@@ -338,7 +339,7 @@
 	display: none;
 	@media (min-width: 1270px) {
 		& {
-			width: 382px;
+			width: 375px;
 		}
 	}
 	@media (min-width: 600px) {

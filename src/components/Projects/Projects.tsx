@@ -52,7 +52,6 @@ function Projects() {
 					</motion.a>
 					<motion.div variants={fadeIn("left", "spring", 0.5, 1)}  className={classNames(styles.Block, styles.Block5)}>
 						<h1 className={styles.BlockTitle}>Coming soon.....</h1>
-						<div className={classNames(styles.cursor_pointer, styles.BlockButton)}><img src={arrow} alt="" /></div>
 					</motion.div>
 				</div>
 			</div>
