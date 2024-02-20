@@ -47,7 +47,7 @@ function People() {
                         </div>
                     </motion.a>
 
-                    <motion.a
+                    {/* <motion.a
                         href='https://slava.bio'
                         target="_blank"
                         variants={fadeIn('right', 'spring', 0.5, 0.75)}
@@ -82,7 +82,7 @@ function People() {
                                 passion for building successful projects.
                             </motion.h1>
                         </div>
-                    </motion.a>
+                    </motion.a> */}
                 </div>
             </div>
             <img
